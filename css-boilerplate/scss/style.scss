@@ -1,0 +1,28 @@
+/*
+Theme Name: Grupo INVE
+Author: estudio Dual for custom design integration | Codivar team delopment | Bryan Hadaway for core base
+Description: A fully responsive, SEO-friendly, Schema-ready, Accessibility-ready, based on Bootstrap 5.1 Grid and utilities.
+Tags: accessibility-ready, one-column, two-columns, right-sidebar, custom-logo, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready, blog, e-commerce, portfolio
+Version: 2.0.0
+Requires PHP: > 7.0
+*/
+
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+@import 'node_modules/bootstrap/scss/reboot';
+@import 'node_modules/bootstrap/scss/modal';
+@import 'node_modules/bootstrap/scss/mixins/transition';
+@import 'node_modules/bootstrap/scss/mixins/caret';
+@import 'node_modules/bootstrap/scss/close';
+@import 'node_modules/bootstrap/scss/bootstrap-grid';
+@import 'node_modules/bootstrap/scss/utilities';
+@import 'node_modules/bootstrap/scss/utilities/api';
+@import 'node_modules/bootstrap/scss/containers';
+@import 'node_modules/bootstrap/scss/buttons';
+@import 'resets';
+@import 'wpeditor';
+@import 'mixins';
+@import 'utilities';
+@import 'parts/index';
+

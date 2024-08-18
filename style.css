@@ -1,0 +1,785 @@
+@charset "UTF-8";
+/*
+Theme Name: Loqueleo Theme
+Author: estudio Dual for custom design integration | serale10 development | Bryan Hadaway for core base
+Description: A fully responsive, SEO-friendly, Schema-ready, Accessibility-ready, based on Bootstrap 5.1 Grid and utilities.
+Tags: accessibility-ready, one-column, two-columns, right-sidebar, custom-logo, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready, blog, e-commerce, portfolio
+Version: 2.0.0
+Requires PHP: > 7.0
+*/
+
+:root {
+  --purple-primary: #7324B8; /* Azul */
+  --blue-primary: #0087B1;
+  --orange-primary: #FFA100;
+}
+
+@font-face {
+  font-family: 'AvantPro';
+  src: url('./assets/webfonts/font_gothic_pro.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.font-avant{
+  font-family: "AvantPro", sans-serif;
+  font-weight: 800;
+}
+
+.font-manrop{
+  font-family: "Manrope", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* COLORS  */
+
+.bg-purple{
+  background-color: var(--purple-primary);
+}
+
+.color-purple{
+  color: var(--purple-primary);
+}
+
+.bg-blue{
+  background-color: var(--blue-primary);
+}
+
+.bg-orange{
+  background-color: var(--orange-primary);
+}
+
+.top-bar{
+  background-color: #2B8B00;
+  border-radius: 50px;
+  color: white;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+}
+
+.button-menu button{
+  font-size: 30px;
+}
+
+.menu-button{
+  margin-block: 15px;
+  margin-inline: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-button a{
+  background-color: transparent;
+  color: white;
+  padding-inline: 15px;
+  padding-block: 3px;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+  position: relative;
+}
+
+.menu-button a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; 
+  height: 1px; 
+  background-color: white; 
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.menu-button a:hover::after{
+ opacity: 1;
+}
+
+.buttons {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease;
+}
+
+.buttons.expanded {
+  height: auto; /* Cambia el height para mostrar los botones */
+}
+
+.logo_header{
+  height: 34px;
+}
+
+.section-banner{
+  /* background-image: url('./assets/section_banner/BP_FONDO.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; */
+  height: auto; 
+  width: 100%; 
+  z-index: 60;
+}
+
+.title-principal{
+  font-family: "AvantPro", sans-serif;
+  font-weight: 800;
+  text-align: left;
+}
+
+
+.button-banner a{
+  background-color: #7324B8;
+  padding-inline: 32px;
+  padding-block: 16px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button-purple{
+  display: inline-flex;
+  background-color: var(--purple-primary);
+  padding-inline: 32px;
+  padding-block: 16px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button-blue{
+  display: inline-flex;
+  background-color: var(--blue-primary);
+  padding-inline: 32px;
+  padding-block: 16px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.section-banner .content{
+  line-height: 1.188rem;
+}
+
+.box-banner{
+  height: 950px;
+  background-image: url('./assets/section_banner/BP_FONDO.png');
+  background-size: auto 800px; 
+  background-position: center top; 
+  width: 100%; 
+  background-repeat: no-repeat;
+}
+
+.section-video{
+  height: 590px;
+  
+}
+
+.pasos_box img{
+  width: 150px;
+}
+
+
+
+.section_claves .box-text .title .number{
+  border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    background-color: var(--orange-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_claves .title img{
+  width: 200px;
+}
+
+.section_claves .fotos{
+  width: 280px;
+}
+
+.card-text{
+  background-color: #F9F9F9;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  height: auto;
+  line-height: 1.4rem;
+  box-shadow: 7px 8px 16px rgba(0, 0, 0, 0.27);
+  position: relative;
+  margin-inline: 20px;
+}
+
+
+.card-text::after{
+  content: '';
+  background-image: url(./assets/section_claves/marco_flor1.png);
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -67px;
+  right: -35px;
+  width: 120px;
+  height: 120px;
+  z-index: -1;
+}
+
+.card-text::before{
+  content: '';
+  background-image: url(./assets/section_claves/marco_flor2.png);
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 9px;
+  left: -89px;
+  width: 120px;
+  height: 120px;
+  z-index: -1;
+}
+
+
+
+.section_claves{
+  height: 1600px;
+}
+
+.card-implementacion{
+  background-color: #F9F9F9;
+  border-radius: 12px;
+  padding: 20px;
+  width: 360px;
+  height: auto;
+  line-height: 1.4rem;
+  box-shadow: 7px 8px 16px rgba(0, 0, 0, 0.27);
+  position: relative;
+  margin-inline: 20px;
+  margin-block: 10px;
+  position: relative;
+}
+
+.card-implementacion .title{
+  display: flex;
+  text-align: center;
+  padding-inline: 19px;
+  padding-block: 10px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  justify-content: center;
+}
+
+.section_implementacion .card-implementacion:nth-of-type(1) .title {
+  background-color: var(--orange-primary);
+}
+
+/* Segundo .card-implementacion */
+.section_implementacion .card-implementacion:nth-of-type(2) .title {
+  background-color: var(--blue-primary);
+}
+
+/* Tercer .card-implementacion */
+.section_implementacion .card-implementacion:nth-of-type(3) .title {
+  background-color: var(--purple-primary);
+}
+
+
+/* .section_implementacion .ruta_tucan{
+  width: 100px;
+} */
+
+.section_implementacion .box-title{
+  height: 200px;
+}
+
+.section_cards{
+  background-image: url(./assets/loqueleo_digital/bg_textura.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section_cards .title-slider{
+  color: var(--purple-primary);
+}
+
+
+.card-slider{
+  background-color: #F9F9F9;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 360px;
+  min-width: 330px;
+  height: 150px;
+  line-height: 1.4rem;
+  position: relative;
+  margin-block: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card-slider .content{
+  position: absolute;
+  padding: 20px;
+  z-index: 10;
+}
+
+.card-slider::after{
+  content: '';
+  background-size: 117px 86px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 120px;
+  height: 100px;
+  z-index: 0;
+}
+
+.card-slider:nth-child(1):after{
+  background-image: url('./assets/loqueleo_digital/biblioteca_virtual.png');
+}
+
+.card-slider:nth-child(2):after{
+  background-image: url('./assets/loqueleo_digital/estadistica.png');
+}
+
+.card-slider:nth-child(3):after{
+  background-image: url('./assets/loqueleo_digital/biblioteca_virtual.png');
+}
+
+.card-slider:nth-child(4):after{
+  background-image: url('./assets/loqueleo_digital/biblioteca_virtual.png');
+}
+
+.card-slider:nth-child(5):after{
+  background-image: url('./assets/loqueleo_digital/biblioteca_virtual.png');
+}
+
+.card-slider:nth-child(6):after{
+  background-image: url('./assets/loqueleo_digital/biblioteca_virtual.png');
+}
+
+.card-slider:nth-child(7):after{
+  background-image: url('./assets/loqueleo_digital/biblioteca_virtual.png');
+}
+
+/* DOCENTES  */
+
+.card-slider.docentes:nth-child(1):after{
+  background-image: url('./assets/loqueleo_digital/biblioteca_virtual.png');
+}
+
+.card-slider.docentes:nth-child(2):after{
+  background-image: url('./assets/loqueleo_digital/estadistica.png');
+}
+
+.card-slider.docentes:nth-child(3):after{
+  background-image: url('./assets/loqueleo_digital/biblioteca_virtual.png');
+}
+
+.card-slider.docentes:nth-child(4):after{
+  background-image: url('./assets/loqueleo_digital/biblioteca_virtual.png');
+}
+
+.card-slider.docentes:nth-child(5):after{
+  background-image: url('./assets/loqueleo_digital/biblioteca_virtual.png');
+}
+
+.card-slider.docentes:nth-child(6):after{
+  background-image: url('./assets/loqueleo_digital/biblioteca_virtual.png');
+}
+
+.card-slider.docentes:nth-child(7):after{
+  background-image: url('./assets/loqueleo_digital/biblioteca_virtual.png');
+}
+
+.card-slider .number{
+  font-size: 75px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font-family: 'AvantPro';
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-block-start: 23px;
+  color: white;
+}
+
+swiper-container{
+  padding-bottom: 35px;
+}
+
+swiper-slide{
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-button-next{
+  bottom: -10px;
+  top: 100%;
+  right: 30%;
+  z-index: 20;
+}
+
+.container-swiper-estudiante .swiper-button-next,
+.container-swiper-docente .swiper-button-next{
+  /* background-color: #0080A0; */
+  bottom: -10px;
+  top: 100%;
+  right: 28%;
+  z-index: 20;
+}
+
+.container-swiper-estudiante .swiper-button-prev,
+.container-swiper-docente .swiper-button-prev{
+  bottom: -10px;
+  top: 100%;
+  left: 40%;
+  z-index: 20;
+}
+
+.swiper-button-next::after{
+  content: ''; /* Oculta el contenido predeterminado */
+  display: block; /* Asegura que el pseudo-elemento sea un bloque */
+  width: 40px; /* Ajusta el tamaño del pseudo-elemento */
+  height: 40px;
+  
+  background-size: 45px; /* Asegura que la imagen se ajuste al tamaño del pseudo-elemento */
+  background-repeat: no-repeat; /* No repite la imagen */
+  background-position: center; /* Centra la imagen en el pseudo-elemento */
+  position: absolute; /* Mantiene la posición absoluta */
+  bottom: 13px; /* Ajusta la posición según tu diseño */
+  top: auto;
+  right: 35%;
+  z-index: 10; /* Asegura que la imagen esté por encima de otros elementos */
+}
+
+.container-swiper-estudiante .swiper-button-next::after{
+  background-image: url('./assets/loqueleo_digital/flecha_naranja_derecha.png'); /* Ruta a tu imagen SVG */
+}
+.container-swiper-estudiante .swiper-button-prev::after{
+  background-image: url('./assets/loqueleo_digital/flecha_naranja_izquierda.png'); /* Ruta a tu imagen SVG */
+}
+
+.container-swiper-docente .swiper-button-next::after{
+  background-image: url('./assets/loqueleo_digital/flecha_morada_derecha.png'); /* Ruta a tu imagen SVG */
+}
+.container-swiper-docente .swiper-button-prev::after{
+  background-image: url('./assets/loqueleo_digital/flecha_morada_izquierda.png'); /* Ruta a tu imagen SVG */
+}
+
+.swiper-button-prev::after {
+  content: ''; /* Oculta el contenido predeterminado */
+  display: block; /* Asegura que el pseudo-elemento sea un bloque */
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: 13px;
+  top: auto;
+  left: 35%;
+  z-index: 10;
+}
+
+
+
+.card-recursos{
+  background-color: #F9F9F9;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 411px;
+  min-width: 340px;
+  height: 229px;
+  line-height: 1.4rem;
+  box-shadow: 7px 8px 16px rgba(0, 0, 0, 0.27);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.box-recursos .column:nth-child(1) .card-recursos:after{
+  content: '';
+  background-image: url(./assets/section_claves/marco_flor1.png);
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -67px;
+  right: -35px;
+  width: 120px;
+  height: 120px;
+  z-index: -1;
+}
+
+.box-recursos .column:nth-child(1) .card-recursos::before{
+  content: '';
+  background-image: url(./assets/section_claves/marco_flor2.png);
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 9px;
+  left: -89px;
+  width: 120px;
+  height: 120px;
+  z-index: -1;
+}
+
+.box-recursos .column:nth-child(2) .card-recursos{
+  background-image: url(./assets/recursos_digitales/ruta_lectura.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; /* Centra la imagen de fondo */
+}
+
+.box-recursos .column:nth-child(2) .card-recursos::before{
+  content: '';
+  background-image: url(./assets/section_claves/marco_flor1.png);
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -42px;
+  left: -76px;
+  width: 120px;
+  height: 120px;
+  z-index: -1;
+  transform: rotate(-120deg);
+}
+
+
+
+.button-purple-card{
+  display: inline-flex;
+    background-color: var(--purple-primary);
+    padding-inline: 32px;
+    padding-block: 16px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 170px;
+}
+
+.section_recursos{
+  height: 1100px;
+}
+
+footer{
+  height: auto;
+}
+
+@media (min-width: 428px) {
+  .box-banner{
+    height: 750px;
+    background-image: url('./assets/section_banner/BP_FONDO.png');
+    background-size: auto 600px; 
+
+  }
+
+  .section_implementacion .card-implementacion:first-of-type::before {
+    content: '';
+    background-image: url('./assets/section_implementacion/etapa_1.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%; /* Coloca el borde superior del pseudo-elemento en el 50% del contenedor */
+    left: -113px;
+    width: 120px;
+    height: 100px;
+    transform: translateY(-50%); /* Ajusta la posición vertical para centrar el pseudo-elemento */
+    z-index: 0;
+  }
+
+  .section_implementacion .card-implementacion:nth-of-type(2)::before {
+    content: '';
+    background-image: url('./assets/section_implementacion/etapa_2.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%; /* Coloca el borde superior del pseudo-elemento en el 50% del contenedor */
+    left: -113px;
+    width: 120px;
+    height: 100px;
+    transform: translateY(-50%); /* Ajusta la posición vertical para centrar el pseudo-elemento */
+    z-index: 0;
+  }
+
+  .section_implementacion .card-implementacion:nth-of-type(3)::before {
+    content: '';
+    background-image: url('./assets/section_implementacion/etapa_3.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%; /* Coloca el borde superior del pseudo-elemento en el 50% del contenedor */
+    left: -113px;
+    width: 120px;
+    height: 100px;
+    transform: translateY(-50%); /* Ajusta la posición vertical para centrar el pseudo-elemento */
+    z-index: 0;
+  }
+
+  .container-swiper-estudiante .swiper-button-next,
+  .container-swiper-docente .swiper-button-next{
+    right: 39%;
+  
+  }
+  
+  .container-swiper-estudiante .swiper-button-prev,
+  .container-swiper-docente .swiper-button-prev{
+    left: 36%;
+  }
+
+  .card-text{
+    width: 380px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .top-bar{
+    height: 80px;
+  }
+
+  /* .section-banner{
+    height: 615px; 
+  } */
+
+  .card-text{
+    width: 445px;
+  }
+
+  
+  .title-principal{
+    width: 300px;
+  }
+
+  .section_claves .fotos{
+    width: 700px;
+  }
+
+
+  .buttons {
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+
+  .section-video{
+    height: 650px;
+    /* background-color: #CBAF6D; */
+  }
+
+  .section_ruta .chico{
+    width: 550px;
+  }
+
+  .section_ruta{
+    height: auto;
+  }
+  .section_ruta .chico{
+    width: 400px;
+  }
+
+  .section_ruta .box-content{
+    margin-inline-start: 250px;
+  }
+  
+  .section_claves .title img{
+    width: 370px;
+  }
+
+  .section_claves{
+    height: auto;
+  }
+
+  .container-swiper-estudiante .swiper-button-next,
+.container-swiper-docente .swiper-button-next{
+  right: 44%;
+
+}
+
+.container-swiper-estudiante .swiper-button-prev,
+.container-swiper-docente .swiper-button-prev{
+  left: 44%;
+}
+
+.section_recursos{
+  height: auto;
+}
+
+footer{
+  height: 80px;
+}
+
+}
+
+@media (min-width: 1280px) {
+
+  .box-banner{
+    height: 804px;
+    background-image: url('./assets/section_banner/BP_FONDO.png');
+    background-size: 100% 607px; 
+
+  }
+
+  /* .box-banner img{
+    width: auto;
+  } */
+
+  .section_ruta .chico{
+    width: 500px;
+  }
+
+  .section_claves .fotos{
+    width: 850px;
+  }
+
+  .section_implementacion .card-implementacion:first-of-type {
+    margin-left: 170px;
+    width: 356px;
+  }
+
+  
+  
+  .section_implementacion .card-implementacion:nth-of-type(2){
+    margin-left: 200px;
+    width: 323px;
+  }
+  
+  .section_implementacion .card-implementacion:nth-of-type(3){
+    margin-left: 150px;
+    width: 373px;
+  }
+
+
+  .section_implementacion .ruta_tucan{
+    width: 475px;
+  }
+
+  .section_implementacion .box-title{
+    height: auto;
+  }
+  
+}
+
+@media (min-width: 1800px) {
+
+ .ruta-3{
+  bottom: -200px !important;
+ }
+  
+}
