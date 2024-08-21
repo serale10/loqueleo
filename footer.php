@@ -1,7 +1,7 @@
 <?php /*template name: footer */ ?>
 
     
-    <footer id="footer" role="contentinfo" class="w-full mt-5 bg-blue flex justify-center items-center text-white">
+    <footer id="footer" role="contentinfo" class="w-full mt-5 bg-blue flex justify-center items-center text-white absolute z-50">
         <div class="container">
             <div class="flex flex-col lg:flex-row items-center my-10 lg:my-0">
                 <div class="w-full lg:w-4/12 flex justify-center xl:justify-start items-center my-3">

@@ -34,73 +34,7 @@
 <?php wp_body_open(); ?>
 
 <header id="header" role="banner">
-    <div class="header-body border-top-0">
-        <div class="header-container container">
-            <div class="row header-row justify-content-between">
-                <?php 
-                    $query_history = new WP_Query( array( 'pagename' => 'home' ) ); 
-                ?>
-                <?php if ($query_history->have_posts()): ?>
-                    <?php while ($query_history->have_posts()): $query_history->the_post(); 
-                    $featured_img_url_mercados = get_the_post_thumbnail_url(get_the_ID(),'full');
-                ?>
-                <div class="col-lg-3 col-md-6 col-auto header-logo mt-0">
-                    
-                    <a href="<?php bloginfo( 'url' ); ?>">
-                        <img alt="<?php echo get_bloginfo('name'); ?>" src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>">
-                    </a> 
-                    
-                    
-                </div>
-                <div class="col-lg-9 col-md-6 col-auto justify-content-end">
-                    <div class="row">
-                        <div class="col-md-10 header-nav header-nav-links">
-                            <div class="header-nav-main header-nav-main-square header-nav-main-font-alternative header-nav-main-effect-2 header-nav-main-sub-effect-1">
-                                
-                                <nav class="collapse">
-                                <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-                                    
-                                </nav>
-
-                                
-                            </div>
-
-                        </div>
-                        <div class="col-md-10 col-auto header-nav-features boton-menu-mobil pe-0">
-                            <button id="btn-mobil"  href="javascript:void(0);" class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav" onclick="" >
-                                        <i class="fas fa-bars"></i>
-                            </button>
-                        </div>
-                        
-
-                        <div class="col-md-2 col-auto header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
-                            <div class="header-nav-feature header-nav-features-search d-inline-flex">
-                                <button class="header-nav-features-toggle top-bar-search-trigger " data-focus="headerSearch"><i class="fas fa-search header-nav-top-icon"></i></button>
-                                <form class="top-bar-searchform" role="search" method="get" id="searchform"  action="<?php echo get_home_url( '/' ); ?>" >
-                                    <div class="custom-form"><label class="screen-reader-text" for="s"><?php __( 'Buscar:' ); ?></label>
-                                        <input class="top-bar-searchinput" type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" />
-                                        <button type="submit" class="top-bar-searform-submit" id="searchsubmit" value="<?php echo esc_attr__( 'Buscar' ); ?>" /><span class="sr-only">Buscar</span><i class="fas fa-search header-nav-top-icon"></i></button>
-                                    </div>
-                                </form>
-                            </div>
-                            
-                        </div> <!--FIN ICONO BUSCAR-->
-                        
-                        
-
-                    </div> <!--HEADER ROW-->
-                </div> <!--HEADER COLUMN-->
-                
-                <?php endwhile; ?>
-                <?php endif; ?>
-                <?php wp_reset_postdata(); ?>
-            </div> <!--HEADER ROW-->
-            
-        </div> <!--HEADER CONTAINER-->
-    </div><!--HEADER BODY-->
-        <!-- <div id="topnav" class="topnav">
-            <?php //wp_nav_menu( array( 'theme_location' => 'main-menu') ); ?>
-        </div> -->
+    <?php get_template_part('template-parts/top-bar'); ?>
  </header>
 <main class="w-full">
     

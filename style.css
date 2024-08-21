@@ -71,7 +71,7 @@ Requires PHP: > 7.0
 
 .menu-button{
   margin-block: 15px;
-  margin-inline: 15px;
+  /* margin-inline: 15px; */
   display: flex;
   justify-content: center;
 }
@@ -84,6 +84,9 @@ Requires PHP: > 7.0
   font-size: 16px;
   font-family: "Manrope", sans-serif;
   position: relative;
+  align-items: center;
+  display: flex;
+  text-align: center;
 }
 
 .menu-button a::after {
@@ -114,6 +117,7 @@ Requires PHP: > 7.0
 
 .logo_header{
   height: 34px;
+  width: 131px;
 }
 
 .section-banner{
@@ -583,6 +587,114 @@ footer{
   height: auto;
 }
 
+
+.registro-form {
+  background-color: white;
+  padding-block: 20px;
+  border-radius: 10px;
+  box-shadow: 5.2px 5.94px 11.88px rgba(0, 0, 0, 0.27);
+  width: 100%;
+}
+
+.registro-form .form-group {
+  margin-bottom: 15px;
+}
+
+.registro-form .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--blue-primary);
+}
+
+.registro-form .form-group input,
+.registro-form .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.registro-form .form-group-half {
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.registro-form .form-group-half:first-child {
+  margin-right: 4%;
+}
+
+.registro-form button[type="submit"] {
+  background-color: var(--blue-primary);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+.registro-form button[type="submit"]:hover {
+  background-color: #004d40;
+}
+
+.recursos-form{
+  padding: 10px;
+}
+
+.recursos-form .form-group-select{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.recursos-form select{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px;
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Para evitar que la flecha interfiera con los clics */
+  color: rgba(0, 0, 0, 0.5); /* Color de la flecha */
+}
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 15px 20px 15px 40px; /* Espacio para el ícono */
+  border: 1px solid rgba(0, 0, 0, 0.5); 
+  border-radius: 8px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5); 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(0, 0, 0, 0.9); /* Color del ícono */
+  font-size: 18px; /* Tamaño del ícono */
+}
+
 @media (min-width: 428px) {
   .box-banner{
     height: 750px;
@@ -725,6 +837,11 @@ footer{
   height: 80px;
 }
 
+.registro-form {
+  width: 600px;
+}
+
+
 }
 
 @media (min-width: 1280px) {
@@ -772,6 +889,10 @@ footer{
 
   .section_implementacion .box-title{
     height: auto;
+  }
+
+  .menu-button{
+    margin-inline: 15px;
   }
   
 }

@@ -1,7 +1,7 @@
 <?php /*template name: home */ ?>
 <?php get_header(); ?>
 
-<?php get_template_part('template-parts/top-bar'); ?>
+
 <?php get_template_part('template-parts/home-principal'); ?>
 <?php get_template_part('template-parts/home-video'); ?>
 <?php get_template_part('template-parts/home-ruta'); ?>
