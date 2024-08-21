@@ -459,8 +459,7 @@ swiper-slide{
   content: ''; /* Oculta el contenido predeterminado */
   display: block; /* Asegura que el pseudo-elemento sea un bloque */
   width: 40px; /* Ajusta el tamaño del pseudo-elemento */
-  height: 40px;
-  
+  height: 40px;  
   background-size: 45px; /* Asegura que la imagen se ajuste al tamaño del pseudo-elemento */
   background-repeat: no-repeat; /* No repite la imagen */
   background-position: center; /* Centra la imagen en el pseudo-elemento */
@@ -482,6 +481,13 @@ swiper-slide{
   background-image: url('./assets/loqueleo_digital/flecha_morada_derecha.png'); /* Ruta a tu imagen SVG */
 }
 .container-swiper-docente .swiper-button-prev::after{
+  background-image: url('./assets/loqueleo_digital/flecha_morada_izquierda.png'); /* Ruta a tu imagen SVG */
+}
+
+.swiperPrimero .swiper-button-next::after{
+  background-image: url('./assets/loqueleo_digital/flecha_morada_derecha.png'); /* Ruta a tu imagen SVG */
+}
+.swiperPrimero .swiper-button-prev::after{
   background-image: url('./assets/loqueleo_digital/flecha_morada_izquierda.png'); /* Ruta a tu imagen SVG */
 }
 
@@ -695,6 +701,101 @@ footer{
   font-size: 18px; /* Tamaño del ícono */
 }
 
+.card-libro {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 228px;
+  height: 305px;
+  padding-block: 10px;
+  padding-inline: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  margin-top: 82px;
+  margin-bottom: 15px;
+}
+
+.card-libro .card-image img {
+  width: 177px; /* Ajustar según sea necesario */
+  height: auto;
+  margin-bottom: 20px;
+  transform: rotate(-10deg);
+  transition: transform 0.3s ease;
+  margin-top: -90px;
+  margin-left: 10px;
+  z-index: 10;
+}
+
+.card-libro .card-image img:hover {
+  transform: rotate(0deg);
+}
+
+.card-libro .card-content {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* .card-libro .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.card-libro .card-subtitle {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 10px;
+  color: #666666;
+}
+
+.card-libro .card-values {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #666666;
+  text-align: left;
+} */
+
+.card-libro .card-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card-libro .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--purple-primary);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 13px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.card-libro .btn-preview {
+  background-color: #6A1B9A;
+}
+
+.card-libro .btn-download {
+  background-color: #4A148C;
+}
+
+.card-libro .btn i {
+  margin-right: 8px;
+  padding-right: 8px;
+}
+
+.card-libro .btn:hover {
+  background-color: #8E24AA;
+}
+
 @media (min-width: 428px) {
   .box-banner{
     height: 750px;
@@ -748,7 +849,6 @@ footer{
   .container-swiper-estudiante .swiper-button-next,
   .container-swiper-docente .swiper-button-next{
     right: 39%;
-  
   }
   
   .container-swiper-estudiante .swiper-button-prev,

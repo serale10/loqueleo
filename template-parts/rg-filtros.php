@@ -1,7 +1,7 @@
 <?php /*template name: rg_filtros */ ?>
 <?php get_header(); ?>
 
-<section class="section_filtros mt-40 flex justify-center">
+<section class="section_filtros mt-40 flex flex-col items-center">
     <div class="container">
         <div class="flex flex-col">
             <div class="w-full">
@@ -34,9 +34,9 @@
                     </div>
                 </form>
             </div>
-            
         </div>
     </div>
+    <?php get_template_part( 'template-parts/rg-primero' ) ?>
 
 </section>
 
