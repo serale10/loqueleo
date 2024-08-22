@@ -9,9 +9,19 @@ Requires PHP: > 7.0
 */
 
 :root {
+
   --purple-primary: #7324B8; /* Azul */
   --blue-primary: #0087B1;
   --orange-primary: #FFA100;
+  --corinto-primary: #822C15;
+  --red-primary: #EF0938;
+  --pink-primary: #EE009C;
+  --blue-secondary: #3660D6;
+  --green-primary: #838C00;
+  --green-secondary: #008065;
+  --blue-third: #1570A9;
+  --purple-secondary: #7532F9;
+  
 }
 
 @font-face {
@@ -21,6 +31,40 @@ Requires PHP: > 7.0
   font-style: normal;
 }
 
+.color-corinto{
+  color: var(--corinto-primary);
+}
+
+.color-red{
+  color: var(--red-primary);
+}
+
+.color-blue{
+  color: var(--blue-primary);
+}
+.color-pink{
+  color: var(--pink-primary);
+}
+
+.color-blue-secondary{
+  color: var(--blue-secondary);
+}
+
+.color-green{
+  color: var(--green-primary);
+}
+
+.color-green-secondary{
+  color: var(--green-secondary);
+}
+
+.color-blue-third{
+  color: var(--blue-third);
+}
+
+.color-purple-secondary{
+  color: var(--purple-secondary);
+}
 
 .font-avant{
   font-family: "AvantPro", sans-serif;
@@ -422,7 +466,8 @@ Requires PHP: > 7.0
   color: white;
 }
 
-swiper-container{
+.container-swiper-estudiante swiper-container,
+.container-swiper-docente swiper-container{
   padding-bottom: 35px;
 }
 
@@ -484,12 +529,6 @@ swiper-slide{
   background-image: url('./assets/loqueleo_digital/flecha_morada_izquierda.png'); /* Ruta a tu imagen SVG */
 }
 
-.swiperPrimero .swiper-button-next::after{
-  background-image: url('./assets/loqueleo_digital/flecha_morada_derecha.png'); /* Ruta a tu imagen SVG */
-}
-.swiperPrimero .swiper-button-prev::after{
-  background-image: url('./assets/loqueleo_digital/flecha_morada_izquierda.png'); /* Ruta a tu imagen SVG */
-}
 
 .swiper-button-prev::after {
   content: ''; /* Oculta el contenido predeterminado */
@@ -796,6 +835,36 @@ footer{
   background-color: #8E24AA;
 }
 
+.section_filter_primero .swiper-button-next.swiperPrimero-next{
+  bottom: -10px;
+  right: 0;
+  top: 50%;
+  z-index: 20;
+}
+
+.section_filter_primero .swiper-button-next {
+  top: 50%;
+  right: 0;
+  z-index: 20;
+}
+
+.section_filter_primero .swiper-button-next::after{
+background-image: url('./assets/loqueleo_digital/flecha_morada_derecha.png'); /* Ruta a tu imagen SVG */
+}
+.section_filter_primero .swiper-button-prev::after{
+background-image: url('./assets/loqueleo_digital/flecha_morada_izquierda.png'); /* Ruta a tu imagen SVG */
+}
+
+.btn-ruta{
+  background-color: var(--purple-primary);
+  padding-inline: 20px;
+  padding-block: 15px;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+
 @media (min-width: 428px) {
   .box-banner{
     height: 750px;
@@ -993,6 +1062,18 @@ footer{
 
   .menu-button{
     margin-inline: 15px;
+  }
+
+  .section_filter_primero .swiper-button-next.swiperPrimero-next{
+    right: 3%;
+  }
+
+  .section_filter_primero .swiper-button-prev.swiperPrimero-prev{
+    left: 3% !important;
+  }
+
+  .section_filter_primero .swiper-button-next {
+    right: 3%;
   }
   
 }

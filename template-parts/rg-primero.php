@@ -1,5 +1,12 @@
-<section class="section_filter_primero relative w-full">
-    <swiper-container class="swiperPrimero w-full lg:w-10/12 mt-6 mb-10"  space-between="10"
+<section class="section_filter_primero section_filtros relative w-full flex flex-col items-center">
+    <div class="w-full lg:w-9/12">
+        <h4 class="font-avant text-2xl color-corinto text-center lg:text-start">Primero Primaria</h4>
+        <div class="flex items-center justify-center lg:justify-start">
+            <p class="font-avant text-base">Lectura para estudiantes de</p>
+            <img class="" src="<?php echo get_template_directory_uri(  ) ?>/assets/recursos_digitales/siete.png" alt="Portada del libro">
+        </div>
+    </div>
+    <swiper-container class="swiperPrimero w-full lg:w-9/12 mt-6"  space-between="10"
         slides-per-view="3" navigate="true">
         <swiper-slide>
             <div class="card-libro">
@@ -126,7 +133,12 @@
     <div class="swiper-button-next swiperPrimero-next"></div>
 
     
-
+    <div class="w-full flex justify-center">
+            <a class="btn-ruta" href=""><i class="fa-light fa-angle-down mx-2"></i> Extiende tu ruta</a>
+    </div>
+    <div class="w-full flex justify-center my-3">
+        <p class="font-bold text-base">Recomendaciones en formato digital</p>
+    </div>
 
 </section>
 
@@ -145,11 +157,11 @@ Object.assign(swiperPrimero, {
             spaceBetween: 10,
         },
         "@0.75": {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 20,
         },
         "@1.00": {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 33,
         },
         "@1.50": {
@@ -157,10 +169,14 @@ Object.assign(swiperPrimero, {
             spaceBetween: 33,
         },
         "@2": {
-            slidesPerView: 4,
+            slidesPerView: 5,
+            spaceBetween: 33,
+        },
+        "@2.50": {
+            slidesPerView: 5,
             spaceBetween: 33,
         },
     },
 });
-swiperEstudiante.initialize();
+// swiperPrimero.initialize();
 </script>
