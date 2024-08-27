@@ -1,13 +1,13 @@
 <section class="section_implementacion relative flex justify-center">
 <img class="absolute right-0 top-0 z-10 w-40 md:w-60 lg:w-72 xl:w-auto" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_implementacion/oso.png" alt="">
 <img class="absolute ruta_tucan left-0 xl:-top-52 z-auto w-28 md:w-40 lg:w-72 xl:w-auto" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_implementacion/ruta_tucan.png" alt="">
-<img class="absolute left-0 bottom-0 2xl:-bottom-20 -z-10 w-auto 2xl:w-full" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_implementacion/ruta_6.png" alt="">
+<img class="absolute left-0 bottom-0 2xl:-bottom-10 -z-10 w-auto 2xl:w-full" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_implementacion/ruta_6.png" alt="">
     
 <div class="container flex flex-col items-center mb-20 md:mb-40 xl:mb-56 mt-12 lg:mt-0">
         <div class="flex flex-col items-center">
             <div class="w-7/12 box-title flex flex-col items-center text-center relative">
                 <div class="absolute xl:relative z-20">
-                    <h2 class="font-avant text-2xl xl:text-5xl">Implementación</h2>
+                    <h2 class="font-avant text-2xl xl:text-6xl">Implementación</h2>
                     <h3 class="font-avant text-xl xl:text-2xl my-3">Pasos para implementar tu Ruta de Lectura ¡Sin Límites!</h3>
                 </div>
             </div>
@@ -42,19 +42,19 @@
                         Enriquece la experiencia lectora
                     </div>
                     <div class="content my-3">
-                        Estrategias de acompañamiento para: Lectura de enriquecimiento integral y lectura por placer. 
+                        Estrategias de acompañamiento para: Lectura de <b>enriquecimiento integral</b> y lectura por placer. 
                         <ul class="list-decimal ms-4">
                             <li>
                                 Actividades para los momentos de la lectura.
                             </li>
                             <li>
-                                Actividades para el desarrollo de la competencia lectora y ciudadanía digital.
+                                Actividades para el <b>desarrollo de la competencia lectora</b> y ciudadanía digital.
                             </li>
                             <li>
-                                Club Lector
+                                <b>Club Lector</b>
                             </li>
                             <li>
-                                Proyectos de lectura en el aula.
+                                <b>Proyectos</b> de lectura en el aula.
                             </li>
                         </ul>
                 </div>

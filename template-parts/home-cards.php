@@ -14,7 +14,7 @@
             </div>
 
             <div class="relative container-swiper-estudiante">
-                <swiper-container class="swiperEstudiante w-full lg:w-10/12 mt-6 mb-10"  space-between="10"
+                <swiper-container class="swiperEstudiante w-full lg:w-11/12 mt-6 mb-10"  space-between="5"
                 slides-per-view="3" >
                     <swiper-slide>
                         <div class="card-slider">
@@ -147,7 +147,7 @@
         const swiperEstudiante = document.querySelector('.swiperEstudiante');
     Object.assign(swiperEstudiante, {
         slidesPerView: 1,
-        spaceBetween: 5,
+        spaceBetween: 2,
         navigation: {
             nextEl: '.swiperEstudiante-next', // Clase específica para "Next"
             prevEl: '.swiperEstudiante-prev', // Clase específica para "Prev"
@@ -159,19 +159,19 @@
             },
             "@0.75": {
                 slidesPerView: 1,
-                spaceBetween: 20,
+                spaceBetween: 10,
             },
             "@1.00": {
                 slidesPerView: 2,
-                spaceBetween: 33,
+                spaceBetween: 3,
             },
             "@1.50": {
                 slidesPerView: 3,
-                spaceBetween: 33,
+                spaceBetween: 3,
             },
             "@2": {
                 slidesPerView: 3,
-                spaceBetween: 33,
+                spaceBetween: 3,
             },
         },
     });

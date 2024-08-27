@@ -95,6 +95,11 @@ Requires PHP: > 7.0
   background-color: var(--orange-primary);
 }
 
+.container-top-bar {
+  max-width: 1200px; /* o el valor adecuado para tu diseño */
+  margin: 0 auto;
+}
+
 .top-bar{
   background-color: #2B8B00;
   border-radius: 50px;
@@ -105,7 +110,7 @@ Requires PHP: > 7.0
   align-items: center;
   margin-top: 30px;
   z-index: 999;
-  position: absolute;
+  position: fixed;
   width: 100%;
 }
 
@@ -233,7 +238,7 @@ Requires PHP: > 7.0
 }
 
 .pasos_box img{
-  width: 150px;
+  width: 142px;
 }
 
 
@@ -246,6 +251,7 @@ Requires PHP: > 7.0
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 14px;
 }
 
 .section_claves .title img{
@@ -266,6 +272,7 @@ Requires PHP: > 7.0
   box-shadow: 7px 8px 16px rgba(0, 0, 0, 0.27);
   position: relative;
   margin-inline: 20px;
+  font-size: 17px;
 }
 
 
@@ -365,8 +372,7 @@ Requires PHP: > 7.0
   background-color: #F9F9F9;
   border-radius: 12px;
   padding: 20px;
-  max-width: 360px;
-  min-width: 330px;
+  width: 330px;
   height: 150px;
   line-height: 1.4rem;
   position: relative;
@@ -426,31 +432,31 @@ Requires PHP: > 7.0
 /* DOCENTES  */
 
 .card-slider.docentes:nth-child(1):after{
-  background-image: url('./assets/loqueleo_digital/biblioteca_virtual.png');
+  background-image: url('./assets/loqueleo_digital/icon_morado.png');
 }
 
 .card-slider.docentes:nth-child(2):after{
-  background-image: url('./assets/loqueleo_digital/estadistica.png');
+  background-image: url('./assets/loqueleo_digital/icon_morado.png');
 }
 
 .card-slider.docentes:nth-child(3):after{
-  background-image: url('./assets/loqueleo_digital/biblioteca_virtual.png');
+  background-image: url('./assets/loqueleo_digital/icon_morado.png');
 }
 
 .card-slider.docentes:nth-child(4):after{
-  background-image: url('./assets/loqueleo_digital/biblioteca_virtual.png');
+  background-image: url('./assets/loqueleo_digital/icon_morado.png');
 }
 
 .card-slider.docentes:nth-child(5):after{
-  background-image: url('./assets/loqueleo_digital/biblioteca_virtual.png');
+  background-image: url('./assets/loqueleo_digital/icon_morado.png');
 }
 
 .card-slider.docentes:nth-child(6):after{
-  background-image: url('./assets/loqueleo_digital/biblioteca_virtual.png');
+  background-image: url('./assets/loqueleo_digital/icon_morado.png');
 }
 
 .card-slider.docentes:nth-child(7):after{
-  background-image: url('./assets/loqueleo_digital/biblioteca_virtual.png');
+  background-image: url('./assets/loqueleo_digital/icon_morado.png');
 }
 
 .card-slider .number{
@@ -476,6 +482,8 @@ swiper-slide{
   justify-content: center;
 }
 
+
+
 .swiper-button-next{
   bottom: -10px;
   top: 100%;
@@ -484,7 +492,8 @@ swiper-slide{
 }
 
 .container-swiper-estudiante .swiper-button-next,
-.container-swiper-docente .swiper-button-next{
+.container-swiper-docente .swiper-button-next,
+.section_claves .swiper-button-next{
   /* background-color: #0080A0; */
   bottom: -10px;
   top: 100%;
@@ -576,6 +585,10 @@ swiper-slide{
   z-index: -1;
 }
 
+.box-recursos .column:nth-child(1) img{
+  width: 80%;
+}
+
 .box-recursos .column:nth-child(1) .card-recursos::before{
   content: '';
   background-image: url(./assets/section_claves/marco_flor2.png);
@@ -591,7 +604,7 @@ swiper-slide{
 
 .box-recursos .column:nth-child(2) .card-recursos{
   background-image: url(./assets/recursos_digitales/ruta_lectura.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center; /* Centra la imagen de fondo */
 }
@@ -931,9 +944,6 @@ background-image: url('./assets/loqueleo_digital/flecha_morada_izquierda.png'); 
 }
 
 @media (min-width: 1024px) {
-  .top-bar{
-    height: 80px;
-  }
 
   /* .section-banner{
     height: 615px; 
@@ -980,7 +990,7 @@ background-image: url('./assets/loqueleo_digital/flecha_morada_izquierda.png'); 
   }
   
   .section_claves .title img{
-    width: 370px;
+    width: 313px;
   }
 
   .section_claves{
@@ -1010,7 +1020,19 @@ footer{
   width: 600px;
 }
 
+.vivir{
+  font-size: 135px !important;
+}
 
+
+}
+
+@media (min-width: 1025px) {
+  .top-bar{
+    width: auto;
+  }
+
+  
 }
 
 @media (min-width: 1280px) {
@@ -1022,12 +1044,16 @@ footer{
 
   }
 
+  .card-slider{
+    width: 360px;
+  }
+
   /* .box-banner img{
     width: auto;
   } */
 
   .section_ruta .chico{
-    width: 500px;
+    width: 550px;
   }
 
   .section_claves .fotos{
@@ -1075,13 +1101,19 @@ footer{
   .section_filter_primero .swiper-button-next {
     right: 3%;
   }
+
+ 
   
 }
+
+
 
 @media (min-width: 1800px) {
 
  .ruta-3{
   bottom: -200px !important;
  }
+
+ 
   
 }

@@ -4,7 +4,7 @@
             </div>
 
             <div class="relative container-swiper-docente">
-                <swiper-container class="swiperDocente w-full lg:w-10/12 mt-6 mb-16"  space-between="30"
+                <swiper-container class="swiperDocente w-full lg:w-11/12 mt-6 mb-16"  space-between="5"
                 slides-per-view="3" navigation="true">
 
                     <swiper-slide>
@@ -17,7 +17,7 @@
                                 </div>
                                 <div class="w-8/12">
                                     <p class="py-3">Acceso a la biblioteca virtual</p>
-                                    <a href="" class="button-purple">Acceder aquí</a>
+                                    <!-- <a href="" class="button-purple">Acceder aquí</a> -->
                                 </div>
                             </div>
                         </div>
@@ -34,7 +34,7 @@
                                 </div>
                                 <div class="w-8/12">
                                     <p class="py-3">Acceso a la biblioteca virtual</p>
-                                    <a href="" class="button-purple">Acceder aquí</a>
+                                    <!-- <a href="" class="button-purple">Acceder aquí</a> -->
                                 </div>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                                 </div>
                                 <div class="w-8/12">
                                     <p class="py-3">Acceso a la biblioteca virtual</p>
-                                    <a href="" class="button-purple">Acceder aquí</a>
+                                    <!-- <a href="" class="button-purple">Acceder aquí</a> -->
                                 </div>
                             </div>
                         </div>
@@ -66,7 +66,7 @@
                                 </div>
                                 <div class="w-8/12">
                                     <p class="py-3">Acceso a la biblioteca virtual</p>
-                                    <a href="" class="button-purple">Acceder aquí</a>
+                                    <!-- <a href="" class="button-purple">Acceder aquí</a> -->
                                 </div>
                             </div>
                         </div>
@@ -82,7 +82,7 @@
                                 </div>
                                 <div class="w-8/12">
                                     <p class="py-3">Acceso a la biblioteca virtual</p>
-                                    <a href="" class="button-purple">Acceder aquí</a>
+                                    <!-- <a href="" class="button-purple">Acceder aquí</a> -->
                                 </div>
                             </div>
                         </div>
@@ -98,7 +98,7 @@
                                 </div>
                                 <div class="w-8/12">
                                     <p class="py-3">Acceso a la biblioteca virtual</p>
-                                    <a href="" class="button-purple">Acceder aquí</a>
+                                    <!-- <a href="" class="button-purple">Acceder aquí</a> -->
                                 </div>
                             </div>
                         </div>
@@ -114,7 +114,7 @@
                                 </div>
                                 <div class="w-8/12">
                                     <p class="py-3">Acceso a la biblioteca virtual</p>
-                                    <a href="" class="button-purple">Acceder aquí</a>
+                                    <!-- <a href="" class="button-purple">Acceder aquí</a> -->
                                 </div>
                             </div>
                         </div>
@@ -136,7 +136,7 @@
     const swiperDocente = document.querySelector('.swiperDocente');
     Object.assign(swiperDocente, {
         slidesPerView: 1,
-        spaceBetween: 5,
+        spaceBetween: 2,
         navigation: {
             nextEl: '.swiperDocente-next', // Clase específica para "Next"
             prevEl: '.swiperDocente-prev', // Clase específica para "Prev"
@@ -152,15 +152,15 @@
             },
             "@1.00": {
                 slidesPerView: 2,
-                spaceBetween: 33,
+                spaceBetween: 3,
             },
             "@1.50": {
                 slidesPerView: 3,
-                spaceBetween: 33,
+                spaceBetween: 3,
             },
             "@2": {
                 slidesPerView: 3,
-                spaceBetween: 33,
+                spaceBetween: 3,
             },
         },
     });

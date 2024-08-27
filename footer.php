@@ -5,16 +5,16 @@
         <div class="container">
             <div class="flex flex-col lg:flex-row items-center my-10 lg:my-0">
                 <div class="w-full lg:w-4/12 flex justify-center xl:justify-start items-center my-3">
-                    <img class="logo_header" src="<?php echo get_template_directory_uri(  ) ?>/assets/logo_loqueleo_bl.png" alt="">
+                    <a href="#box-banner"><img class="logo_header" src="<?php echo get_template_directory_uri(  ) ?>/assets/logo_loqueleo_bl.png" alt=""></a>
                 </div>
                 <div class="w-full lg:w-4/12 flex justify-center items-center my-3">
-                    <a href="" class="text-white text-3xl mx-6"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="" class="text-white text-3xl mx-6"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="" class="text-white text-3xl mx-6"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/santillanaguatemala" class="text-white text-3xl mx-6"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/santillanacan/" class="text-white text-3xl mx-6"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/results?search_query=santillana+centroamerica+norte" class="text-white text-3xl mx-6"><i class="fa-brands fa-youtube"></i></a>
                 </div>
                 <div class="w-full lg:w-4/12 text-xl flex justify-center xl:justify-end items-center my-3">
                         <i class="fa-light fa-globe text-3xl mx-2"></i>
-                        <a>catalogo.Santillana.com.gt</a>
+                        <a href="https://catalogo.santillana.com.gt/">catalogo.Santillana.com.gt</a>
                 </div>
             </div>
         </div>
