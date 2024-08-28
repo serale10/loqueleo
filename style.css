@@ -254,7 +254,7 @@ Requires PHP: > 7.0
     padding-top: 14px;
 }
 
-.section_claves .title img{
+.section_claves .title .titulo{
   width: 200px;
 }
 
@@ -474,7 +474,7 @@ Requires PHP: > 7.0
 
 .container-swiper-estudiante swiper-container,
 .container-swiper-docente swiper-container{
-  padding-bottom: 35px;
+  padding-bottom: 39px;
 }
 
 swiper-slide{
@@ -513,11 +513,10 @@ swiper-slide{
 .swiper-button-next::after{
   content: ''; /* Oculta el contenido predeterminado */
   display: block; /* Asegura que el pseudo-elemento sea un bloque */
-  width: 40px; /* Ajusta el tamaño del pseudo-elemento */
-  height: 40px;  
-  background-size: 45px; /* Asegura que la imagen se ajuste al tamaño del pseudo-elemento */
-  background-repeat: no-repeat; /* No repite la imagen */
-  background-position: center; /* Centra la imagen en el pseudo-elemento */
+  width: 52px;
+    height: 52px; 
+  background-size: 55px;
+    background-position: 1px -2px;
   position: absolute; /* Mantiene la posición absoluta */
   bottom: 13px; /* Ajusta la posición según tu diseño */
   top: auto;
@@ -541,13 +540,13 @@ swiper-slide{
 
 
 .swiper-button-prev::after {
-  content: ''; /* Oculta el contenido predeterminado */
-  display: block; /* Asegura que el pseudo-elemento sea un bloque */
-  width: 40px;
-  height: 40px;
-  background-size: 40px;
+  content: '';
+  display: block;
+  width: 73px;
+  height: 58px;
+  background-size: 85px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: -13px -4px;
   position: absolute;
   bottom: 13px;
   top: auto;
@@ -889,6 +888,14 @@ background-image: url('./assets/loqueleo_digital/flecha_naranja_izquierda.png');
   font-weight: 600;
 }
 
+.slide-button img {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Escala la imagen cuando se pasa el ratón sobre el botón */
+.slide-button:hover img {
+  transform: scale(1.1); /* Ajusta el valor de la escala según sea necesario */
+}
 
 @media (min-width: 428px) {
   .box-banner{
@@ -1009,7 +1016,7 @@ background-image: url('./assets/loqueleo_digital/flecha_naranja_izquierda.png');
     margin-inline-start: 250px;
   }
   
-  .section_claves .title img{
+  .section_claves .title .titulo{
     width: 313px;
   }
 

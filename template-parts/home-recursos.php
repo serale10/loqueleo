@@ -1,5 +1,6 @@
 <section class="section_recursos flex justify-center relative pb-40">
 <img class="absolute right-0 bottom-0 z-10 w-40 md:w-60 xl:w-auto" src="<?php echo get_template_directory_uri(  ) ?>/assets/recursos_digitales/chico_3.png" alt="">
+<!-- <img class="absolute z-40 right-14 top-0 w-40" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_claves/libelula.gif"" alt="" > -->
     <div class="container ">
         <div class="flex flex-col items-center">
             <div class="w-9/12 flex flex-col items-start mb-12">

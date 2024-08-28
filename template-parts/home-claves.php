@@ -4,9 +4,11 @@
     <img class="absolute right-0 bottom-10 lg:top-1/2 transform -translate-y-1/2 z-20 w-28 md:w-auto" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_claves/avestruz.png" alt="">
     <div class="container mt-28 lg:mt-5">
         <div class="flex flex-col justify-center items-center">
-            <div class="w-full lg:w-7/12 flex flex-col lg:flex-row items-center title">
-                <img src="<?php echo get_template_directory_uri(  ) ?>/assets/section_claves/titulo.png" alt="">
+            <div class="w-full lg:w-7/12 flex flex-col lg:flex-row items-center title relative">
+                <img class="titulo" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_claves/titulo.png" alt="">
                 <h1 class="font-avant text-4xl lg:text-6xl 2xl:text-7xl">claves de éxito</h1>
+
+                <img class="absolute -z-10 right-14 -bottom-10 lg:-bottom-20 xl:-bottom-10 w-40" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_claves/libelula.gif"" alt="" >
             </div>
             <div class="w-10/12">
                 <div class="flex flex-col lg:flex-row items-center">
