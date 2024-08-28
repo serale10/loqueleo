@@ -1073,7 +1073,7 @@ footer{
   }
 
   .card-slider{
-    width: 360px;
+    width: 360px !important;
   }
 
   /* .box-banner img{

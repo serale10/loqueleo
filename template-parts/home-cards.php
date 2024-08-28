@@ -14,8 +14,8 @@
             </div>
 
             <div class="relative container-swiper-estudiante">
-                <swiper-container class="swiperEstudiante w-full mt-6 mb-10"  space-between="5"
-                slides-per-view="3" centered-slides="true" slides-per-view="auto">
+                <swiper-container class="swiperEstudiante w-full mt-6 mb-10"  space-between="5" slides-per-view="auto"
+                slides-per-view="3" centered-slides="true" >
                     <swiper-slide>
                         <div class="card-slider">
                             <div class="content flex w-full">
@@ -163,7 +163,7 @@
             },
             "@1.00": {
                 slidesPerView: 3,
-                spaceBetween: 3,
+                spaceBetween: 10,
             },
             "@1.50": {
                 slidesPerView: 4,
