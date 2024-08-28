@@ -13,13 +13,21 @@
                     <div class="w-full lg:w-4/12">
                         <div class="flex justify-center">
                             <div class="w-6/12 flex flex-col items-center pasos_box">
-                                <a href="https://facebook.com"><img class="mx-5 my-5" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_claves/pasos_1.png" alt=""></a>
-                                <img class="mx-5 my-5" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_claves/pasos_3.png" alt="">
-                                <img class="mx-5 my-5" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_claves/pasos_5.png" alt="">
+                                <a href="#" data-slide="0" class="slide-button"><img class="mx-5 my-5" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_claves/pasos_1.png" alt=""></a>
+                                <a href="#" data-slide="2" class="slide-button">
+                                    <img class="mx-5 my-5" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_claves/pasos_3.png" alt="">
+                                </a>
+                                <a href="#" data-slide="4" class="slide-button">
+                                    <img class="mx-5 my-5" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_claves/pasos_5.png" alt="">
+                                </a>
                             </div>
                             <div class="w-6/12 flex flex-col items-center pasos_box flex flex-col justify-center">
-                                <img class="mx-5 my-5" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_claves/pasos_2.png" alt="">
-                                <img class="mx-5 my-5" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_claves/pasos_4.png" alt="">
+                                <a href="#" data-slide="1" class="slide-button">
+                                    <img class="mx-5 my-5" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_claves/pasos_2.png" alt="">
+                                </a>
+                                <a href="#" data-slide="3" class="slide-button">
+                                    <img class="mx-5 my-5" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_claves/pasos_4.png" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -27,42 +35,100 @@
                         <swiper-container class="swiperExito w-full"  space-between="10"
                         slides-per-view="1" navigate="true">
                             <swiper-slide>
-                            <div class="w-full box-text lg:ms-16">
-                                <div class="flex flex-col">
-                                    <div class="title flex items-center my-5">
-                                        <div class="number font-avant text-5xl">
-                                                1
+                                <div class="w-full box-text lg:ms-16">
+                                    <div class="flex flex-col">
+                                        <div class="title flex items-center my-5">
+                                            <div class="number font-avant text-5xl">
+                                                    1
+                                            </div>
+                                            <div class="font-avant text-2xl lg:text-3xl mx-4">Objetivos claros</div>
                                         </div>
-                                        <div class="font-avant text-2xl lg:text-3xl mx-4">Objetivos claros</div>
-                                    </div>
-                                    <div class="content w-full lg:w-9/12">
-                                        <p>
-                                        No solo mejorar la comprensión lectora, sino también, amplia el vocabulario, fomenta el pensamiento crítico y crea el hábito y el gusto por la lectura.
-                                        </p>
+                                        <div class="content w-full lg:w-9/12">
+                                            <p>
+                                            No solo mejorar la comprensión lectora, sino también, amplia el vocabulario, fomenta el pensamiento crítico y crea el hábito y el gusto por la lectura.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             </swiper-slide>
                             <swiper-slide>
-                            <div class="w-full box-text lg:ms-16">
-                                <div class="flex flex-col">
-                                    <div class="title flex items-center my-5">
-                                        <div class="number font-avant text-5xl">
-                                                2
+                                <div class="w-full box-text lg:ms-16">
+                                    <div class="flex flex-col">
+                                        <div class="title flex items-center my-5">
+                                            <div class="number font-avant text-5xl">
+                                                    2
+                                            </div>
+                                            <div class="font-avant text-2xl lg:text-3xl mx-4">Objetivos claros</div>
                                         </div>
-                                        <div class="font-avant text-2xl lg:text-3xl mx-4">Objetivos claros</div>
-                                    </div>
-                                    <div class="content w-full lg:w-9/12">
-                                        <p>
-                                        No solo mejorar la comprensión lectora, sino también, amplia el vocabulario, fomenta el pensamiento crítico y crea el hábito y el gusto por la lectura.
-                                        </p>
+                                        <div class="content w-full lg:w-9/12">
+                                            <p>
+                                            No solo mejorar la comprensión lectora, sino también, amplia el vocabulario, fomenta el pensamiento crítico y crea el hábito y el gusto por la lectura.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="w-full box-text lg:ms-16">
+                                    <div class="flex flex-col">
+                                        <div class="title flex items-center my-5">
+                                            <div class="number font-avant text-5xl">
+                                                    3
+                                            </div>
+                                            <div class="font-avant text-2xl lg:text-3xl mx-4">Objetivos claros</div>
+                                        </div>
+                                        <div class="content w-full lg:w-9/12">
+                                            <p>
+                                            No solo mejorar la comprensión lectora, sino también, amplia el vocabulario, fomenta el pensamiento crítico y crea el hábito y el gusto por la lectura.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="w-full box-text lg:ms-16">
+                                    <div class="flex flex-col">
+                                        <div class="title flex items-center my-5">
+                                            <div class="number font-avant text-5xl">
+                                                    4
+                                            </div>
+                                            <div class="font-avant text-2xl lg:text-3xl mx-4">Objetivos claros</div>
+                                        </div>
+                                        <div class="content w-full lg:w-9/12">
+                                            <p>
+                                            No solo mejorar la comprensión lectora, sino también, amplia el vocabulario, fomenta el pensamiento crítico y crea el hábito y el gusto por la lectura.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="w-full box-text lg:ms-16">
+                                    <div class="flex flex-col">
+                                        <div class="title flex items-center my-5">
+                                            <div class="number font-avant text-5xl">
+                                                    5
+                                            </div>
+                                            <div class="font-avant text-2xl lg:text-3xl mx-4">Objetivos claros</div>
+                                        </div>
+                                        <div class="content w-full lg:w-9/12">
+                                            <p>
+                                            No solo mejorar la comprensión lectora, sino también, amplia el vocabulario, fomenta el pensamiento crítico y crea el hábito y el gusto por la lectura.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </swiper-slide>
                         </swiper-container>
                         <div class="swiper-button-prev swiperExito-prev"></div>
                         <div class="swiper-button-next swiperExito-next"></div>
+                        <div class="swiper-pagination hidden">
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,6 +157,13 @@
             nextEl: '.swiperExito-next', // Clase específica para "Next"
             prevEl: '.swiperExito-prev', // Clase específica para "Prev"
         },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+            },
+        },
         breakpoints: {
             "@0.00": {
                 slidesPerView: 1,
@@ -118,4 +191,24 @@
             },
         },
     });
+
+    document.querySelectorAll('.slide-button').forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        const slideIndex = this.getAttribute('data-slide');
+        
+        // // Simula un clic en el bullet correspondiente dentro de .swiperExito
+        const bullets = document.querySelectorAll('.swiper-pagination .swiper-pagination-bullet');
+        
+        if (bullets && bullets[slideIndex]) {
+            bullets[slideIndex].click();  // Simula un clic en el bullet correspondiente
+        } else {
+            console.error('No se encontraron los bullets de paginación o el índice es incorrecto.');
+        }
+        // alert(bullets);
+        console.log(bullets);
+    });
+});
+
+
 </script>

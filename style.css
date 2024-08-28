@@ -497,15 +497,16 @@ swiper-slide{
   /* background-color: #0080A0; */
   bottom: -10px;
   top: 100%;
-  right: 28%;
+  right: 30%;
   z-index: 20;
 }
 
 .container-swiper-estudiante .swiper-button-prev,
-.container-swiper-docente .swiper-button-prev{
+.container-swiper-docente .swiper-button-prev,
+.section_claves .swiper-button-prev{
   bottom: -10px;
   top: 100%;
-  left: 40%;
+  left: 25%;
   z-index: 20;
 }
 
@@ -868,6 +869,17 @@ background-image: url('./assets/loqueleo_digital/flecha_morada_derecha.png'); /*
 background-image: url('./assets/loqueleo_digital/flecha_morada_izquierda.png'); /* Ruta a tu imagen SVG */
 }
 
+.section_claves .swiper-button-next::after{
+  background-image: url('./assets/loqueleo_digital/flecha_naranja_derecha.png'); /* Ruta a tu imagen SVG */
+  }
+.section_claves .swiper-button-prev::after{
+background-image: url('./assets/loqueleo_digital/flecha_naranja_izquierda.png'); /* Ruta a tu imagen SVG */
+}
+
+.section_claves swiper-slide{
+  margin-block-end: 40px;
+}
+
 .btn-ruta{
   background-color: var(--purple-primary);
   padding-inline: 20px;
@@ -936,6 +948,14 @@ background-image: url('./assets/loqueleo_digital/flecha_morada_izquierda.png'); 
   .container-swiper-estudiante .swiper-button-prev,
   .container-swiper-docente .swiper-button-prev{
     left: 36%;
+  }
+
+  .section_claves .swiper-button-next{
+    right: 45%;
+  }
+
+  .section_claves .swiper-button-prev{
+    left: 30%;
   }
 
   .card-text{
@@ -1030,6 +1050,14 @@ footer{
 @media (min-width: 1025px) {
   .top-bar{
     width: auto;
+  }
+
+  .section_claves .swiper-button-next{
+    right: 55%;
+  }
+
+  .section_claves .swiper-button-prev{
+    left: 30%;
   }
 
   
