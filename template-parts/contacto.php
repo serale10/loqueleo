@@ -12,7 +12,7 @@
             <div class="w-full lg:w-8/12 xl:w-7/12">
                 <div class="contact-form mt-40 flex flex-col px-5 relative">
                     <form class="registro-form px-8 xl:px-16 z-20" action="">
-                        <div class="title font-avant text-center xl:text-start text-4xl xl:text-5xl my-5">Accede a tu ruta</div>
+                        <div class="title font-avant text-center xl:text-start text-4xl xl:text-5xl my-5">Accede <br>a tu ruta</div>
                         <div class="form-group">
                             <label for="institucion">Nombre de Institución</label>
                             <input type="text" id="institucion" name="institucion" placeholder="Nombre de la institución">
@@ -35,12 +35,16 @@
                             <label for="perfil">Perfil</label>
                             <select id="perfil" name="perfil">
                                 <option value="">Seleccione un perfil</option>
+                                <option value="">Docente</option>
+                                <option value="">Director</option>
+                                <option value="">Coordinador</option>
+                                <option value="">Otro (cuando seleccione otro se debe abrir un campo para escribir el perfil)</option>
                                 <!-- Agregar opciones aquí -->
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="codigo">Código (listado en tu tarjeta)</label>
-                            <input type="text" id="codigo" name="codigo" placeholder="Código (listado en tu tarjeta)">
+                            <input type="text" id="codigo" name="codigo" placeholder="Código (proporcionado por tu asesor educativo)">
                         </div>
                         <div class="form-group flex justify-end">
                             <button type="submit">Enviar</button>

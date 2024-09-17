@@ -39,7 +39,7 @@
                         </a>
                     </div>
                     <div class="menu-button">
-                        <a href="/?page_id=5">
+                        <a href="contacto">
                         Contacto
                         </a>
                     </div>

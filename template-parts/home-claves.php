@@ -1,3 +1,8 @@
+<style type="">
+    body{
+        background: #a7d5d51f;
+    }
+</style>
 <section class="section_claves flex justify-center relative">
     <img class="absolute fotos right-0 bottom-0 -z-10 w-auto" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_claves/grupo_fotos.png" alt="">
     <img class="absolute left-0 top-0 -z-10 w-60 md:w-96" src="<?php echo get_template_directory_uri(  ) ?>/assets/section_claves/ruta_3.png" alt="">
@@ -139,7 +144,7 @@
                     <div class="flex">
                         <div class="w-full flex justify-center lg:w-6/12 my-16 relative">
                             <div class="card-text md:ms-16 absolute md:relative z-50 md:z-auto">
-                            En un entorno sincrónico, facilitamos la lectura tanto digital como impresa en el aula. De forma asincrónica, proporcionamos acceso a nuestra biblioteca virtual, permitiendo la lectura desde casa. <br><br>Las obras han sido seleccionadas con una importante visión pedagógica, con el objetivo de fortalecer el desarrollo de habilidades integrales para el crecimiento lector <br><br>Las actividades interactivas se encuentran organizadas en un itinerario flexible y basadas en estándares internacionales de evaluación.
+                            En un entorno sincrónico, facilitamos la lectura tanto digital como impresa en el aula. De forma asincrónica, proporcionamos acceso a nuestra biblioteca virtual, permitiendo la lectura desde casa. <br><br>Las obras han sido seleccionadas con una importante visión pedagógica,<b>con el objetivo de fortalecer el desarrollo de habilidades integrales para el crecimiento lector </b><br><br>Las actividades interactivas se encuentran organizadas en un itinerario flexible y basadas en estándares internacionales de evaluación.
                             </div>
                         </div>
                     </div>

@@ -27,7 +27,7 @@
                     </ul>
                 </p>
 
-                <a href="" class="button-blue my-3 xl:ms-7 disabled-link">Conoce los titulos disponibles</a>
+                <a href="https://catalogo.santillana.com.gt/editorial/Loqueleo%20-%20Literatura" class="button-blue my-3 xl:ms-7 disabled-link" target="_blank">Conoce los titulos disponibles</a>
             </div>
         </div>
     </div>
